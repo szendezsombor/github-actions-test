@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/szendezsombor/github-actions-test.git"
   },
+  "files": [
+    "./src/"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
