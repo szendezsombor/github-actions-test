@@ -6,7 +6,7 @@ on:
       - opened
       - closed
     branches:
-      - '**elease**'
+      - '**'
 
 jobs:
   release:
