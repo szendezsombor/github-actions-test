@@ -2,10 +2,11 @@ name: Release
 
 on:
   pull_request:
-    branches:
-      - "release/v[1-9]+.[0-9]+.[0-9]+"
     types:
-      - "closed"
+      - opened
+      - closed
+    branches:
+    - 'release/**'
 
 jobs:
   release:
@@ -16,6 +17,9 @@ jobs:
         id: branch-name
         uses: tj-actions/branch-names@v5.2
       - uses: actions/checkout@v3
+      - name: echooooo
+        run: | 
+          echo "Running on default: ${{ github.head_ref }}"
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
