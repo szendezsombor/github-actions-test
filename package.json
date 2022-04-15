@@ -1,15 +1,22 @@
 {
-  "name": "github-actions-test",
+  "name": "@szendezsombor/github-actions-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/szendezsombor/github-actions-test.git"
   },
+  "files": [
+    "./src/"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
