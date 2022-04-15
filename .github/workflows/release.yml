@@ -6,7 +6,7 @@ on:
       - opened
       - closed
     branches:
-      - '**'
+      - 'release/v1.0.3'
 
 jobs:
   release:
