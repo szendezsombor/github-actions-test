@@ -5,12 +5,12 @@ on:
     types:
       - opened
       - closed
-    # branches:
-    #   - 'release/v1.0.3'
+    branches:
+    - 'release/**'
 
 jobs:
   release:
-    # if: github.event.pull_request.merged == true
+    if: startsWith(github.head_ref, 'release/') && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Get branch name
